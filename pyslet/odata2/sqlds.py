@@ -1848,7 +1848,7 @@ class SQLCollectionBase(core.EntityCollection):
         query.append(self.sql_expression(expression.operands[0], params, ','))
         query.append(" FROM ")
         query.append(self.sql_expression(expression.operands[1], params, ','))
-        if len(expression.operands > 2):
+        if len(expression.operands) > 2:
             query.append(" FOR ")
             query.append(
                 self.sql_expression(expression.operands[2], params, ','))
