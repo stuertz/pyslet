@@ -1,5 +1,6 @@
 include *.rst
 include doc/conf.py
+include LICENSE.txt
 recursive-include doc *.rst
 recursive-include doc/images *.png 
 recursive-include samples *.xml *.py *.txt
